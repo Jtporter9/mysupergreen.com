@@ -1,6 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=PT+Mono);
+
+//Variables//
 @backcolor-main: whitesmoke;
 @yellow: #FFF236;
+@lightblue: rgb(36, 125, 218);
 
 body {
     font-family: 'PT Mono', monospace;
@@ -8,6 +11,7 @@ body {
     margin: 0;
     padding: 0;
 }
+/////HEADER SECTION/////
 .h1-holder {
     width: 100%;
     color: @yellow;
@@ -15,32 +19,33 @@ body {
     text-align: center;
     h1 {
         margin: 0;
-        clear:none;
+        clear: none;
     }
-    // div{border: 1px solid white;}
-    .links-left{
-      color:white;
-      position: absolute;
-      top:10px;
-      left:5%;
-      a{
-        // margin:5px;
-        // padding:10px;
-        color:white;
-      }
-      a:hover{color:@yellow}
+    .links-left {
+        color: white;
+        position: absolute;
+        top: 10px;
+        left: 5%;
+        a {
+            color: white;
+            padding:5px;
+        }
+        a:hover {
+            color: @lightblue;
+            padding:5px;
+        }
     }
-    .links-right{
-      color:white;
-      position: absolute;
-      top:10px;
-      right:5%;
-      a{
-        // margin:5px;
-        // padding:10px;
-        color:white;
-      }
-      a:hover{color:@yellow}
+    .links-right {
+        color: white;
+        position: absolute;
+        top: 10px;
+        right: 5%;
+        a {
+            color: white;
+        }
+        a:hover {
+            color: @lightblue
+        }
     }
 }
 header {
@@ -52,9 +57,6 @@ header {
     height: auto;
     padding: 50px 10px 10px;
     box-shadow: 2px 2px 2px 2px gray;
-    // div {
-    //     border: 1px solid white;
-    // }
     .header-img {
         width: 50%;
         img {
@@ -67,12 +69,12 @@ header {
         float: right;
         padding: 5px;
         width: 20%;
-        a,
-        span {
+        a, span {
             color: white;
+            padding:20px 0;
         }
         a:hover {
-            color: @yellow;
+            color: @lightblue;
         }
         div {
             position: relative;
@@ -84,16 +86,22 @@ header {
     .header-left {
         float: left;
         width: 20%;
-        a{
-          color:@yellow;
-          i {
-            font-size: 40px;
-            margin: 5px 10px;
-            position: relative;
-            top: 145px;
-            left: 25%;
-          }
+        a {
+            color: @yellow;
+            i {
+                font-size: 40px;
+                margin: 5px 10px;
+                position: relative;
+                top: 145px;
+                left: 25%;
+            }
         }
-        a:hover{color: rgb(36, 125, 218);}
+        a:hover {
+            color:@lightblue;
+            i{
+              border-bottom: 2px solid white;
+            }
+        }
     }
 }
+//////END OF HEADER////////
