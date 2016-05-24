@@ -1,0 +1,23 @@
+{
+  "name": "super-green",
+  "authors": [
+    "J. Tanner Porter <jtporter9@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "less": "^2.7.1",
+    "jquery": "^2.2.4",
+    "angular": "^1.5.5",
+    "angular-ui-router": "^0.3.0"
+  }
+}
