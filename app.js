@@ -15,11 +15,11 @@ angular.module('mySuperClean', ['ui.router'])
 				templateUrl: 'js/about/about.html',
 				controller: 'aboutCtrl'
 			})
-			// 	.state('sign-up', {
-			// 	url: '/sign-up',
-			// 	templateUrl: 'js/sign-up/sign-up.html',
-			// 	controller: 'sign-upCtrl'
-			// })
+				.state('contact', {
+				url: '/contact',
+				templateUrl: 'js/contact/contact.html',
+				controller: 'contactCtrl'
+			})
 			// .state('admin', {
 			// 	url: '/admin',
 			// 	templateUrl: 'js/admin/admin.html',
