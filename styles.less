@@ -1,10 +1,8 @@
-@import url(https://fonts.googleapis.com/css?family=PT+Mono);
-
-//Variables//
+@import url(https://fonts.googleapis.com/css?family=PT+Mono); //Variables//
 @backcolor-main: whitesmoke;
 @yellow: #FFF236;
 @lightblue: rgb(36, 125, 218);
-
+@leafgreen: #00A357;
 body {
     font-family: 'PT Mono', monospace;
     background-color: @backcolor-main;
@@ -21,36 +19,10 @@ body {
         margin: 0;
         clear: none;
     }
-    .links-left {
-        color: white;
-        position: absolute;
-        top: 10px;
-        left: 2%;
-        a {
-            color: white;
-            padding:5px;
-        }
-        a:hover {
-            color: @lightblue;
-            padding:5px;
-        }
-    }
-    .links-right {
-        color: white;
-        position: absolute;
-        top: 10px;
-        right: 2%;
-        a {
-            color: white;
-        }
-        a:hover {
-            color: @lightblue
-        }
-    }
 }
 header {
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
     color: @yellow;
     border-bottom: 1px solid black;
     background-color: rgb(30, 42, 26);
@@ -59,28 +31,34 @@ header {
     box-shadow: 2px 2px 2px 2px gray;
     .header-img {
         width: 50%;
+        margin-left: 25%;
+        margin-bottom: 10px;
         img {
             width: 100%;
             border: 1px solid black;
             box-shadow: 2px 2px 2px 2px rgb(50, 62, 46);
+            border-radius: 5px;
         }
     }
-    .header-right {
-        float: right;
-        padding: 5px;
-        width: 20%;
-        a, span {
-            color: white;
-            padding:20px 0;
+    .links {
+        width: 100%;
+        border: 1px solid yellow;
+        height: auto;
+        text-align: center;
+        font-size: 18px;
+        border-radius: 5px;
+        padding: 5px 0;
+        background-color: @yellow;
+        a {
+            padding: 5px;
+            color: black;
+            margin: 5px;
         }
         a:hover {
+            border-left: 1px solid black;
+            border-right: 1px solid black;
             color: @lightblue;
-        }
-        div {
-            position: relative;
-            top: 20px;
-            right: 5%;
-            margin: 20px;
+            background-color: @leafgreen;
         }
     }
     .header-left {
@@ -97,18 +75,42 @@ header {
             }
         }
         a:hover {
-            color:@lightblue;
-            i{
-              border-bottom: 2px solid white;
+            color: @lightblue;
+            i {
+                border-bottom: 2px solid white;
             }
         }
     }
 }
 //////END OF HEADER////////
+///FOOTER////
+footer {
+    box-shadow: 2px 2px 2px 2px gray;
+    color: @yellow;
+    border-top: 1px solid black;
+    background-color: rgb(30, 42, 26);
+    height: auto;
+    text-align: right;
+    padding: 10px;
+    a,
+    span {
+        color: white;
+    }
+    a:hover {
+        color: @lightblue;
+    }
+    div:nth-child(1) {
+        float: left;
+        text-align: left;
+    }
+    div {
+        padding: 3px;
+    }
+}
 ///// HOME /////
 .container-main {
-  border: 1px solid black;
-  width:80%;
-  margin: 10px 10%;
-  text-align: center;
+    border: 1px solid black;
+    width: 80%;
+    margin: 10px 10%;
+    text-align: center;
 }
