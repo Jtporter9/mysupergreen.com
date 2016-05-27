@@ -1,32 +1,42 @@
-<div class="h1-holder">
+  <div class="h1-holder">
 
-    <h1>Welcome to the next generation of cleaning.</h1>
-</div>
-<header>
-    <div class="header-left">
-        <a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-        <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
-        <a href=""><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
-    </div>
+      <h1>Welcome to the next generation of cleaning.</h1>
+  </div>
+  <header>
+      <div class="header-left">
+          <a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+      </div>
 
-    <div class="header-img">
-        <img src="pics/super green full sign fix.jpg" alt="">
-    </div>
-    <div class="links">
-        <button class="dropbtn"><a href="/#/home">Home</a></button>
-        <button class="dropbtn"><a href="/#about">About</a></button>
-        <button class="dropbtn"><a href="/#/contact">Contact</a></button>
+      <div class="header-img">
+          <img src="pics/super green full sign fix.jpg" alt="">
+      </div>
+      <div class="links">
+          <button class="dropbtn">
+              <i class="fa fa-home" aria-hidden="true"></i>
+              <a href="/#/home">Home</a>
+          </button>
+          <button class="dropbtn">
+            <i class="fa fa-suitcase" aria-hidden="true"></i>
+            <a href="/#about">About</a>
+          </button>
+          <button class="dropbtn">
+            <a href="/#/contact">Contact</a>
+            <i class="fa fa-phone" aria-hidden="true"></i>
+          </button>
 
-        <button ng-click="DropDownToggle()" class="dropbtn">
-            <a href="">Services</a>
-        </button>
-        <div class="dropdown">
-            <div ng-show="showDropDown" class="dropdown-content">
-                <a href="#">Cars</a>
-                <a href="#">Kitchen</a>
-                <a href="#">Driveway</a>
-                <a href="#">Etc...</a>
-            </div>
-        </div>
-    </div>
-</header>
+          <button ng-click="DropDownToggle()" class="dropbtn">
+              <a href="">Services</a>
+              <i class="fa fa-caret-square-o-down" aria-hidden="true"></i>
+          </button>
+          <div class="dropdown">
+              <div ng-show="showDropDown" class="dropdown-content">
+                  <a href="#">Cars</a>
+                  <a href="#">Kitchen</a>
+                  <a href="#">Driveway</a>
+                  <a href="#">Etc...</a>
+              </div>
+          </div>
+      </div>
+  </header>

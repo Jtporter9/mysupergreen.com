@@ -3,12 +3,12 @@ angular.module('mySuperClean').directive('dirHeader', function() {
         templateUrl: 'js/directives/header/header.html',
         controller: function($scope) {
 
-				$scope.showDropDown = false;
+            $scope.showDropDown = false;
 
-				$scope.DropDownToggle = function() {
-					$scope.showDropDown = !$scope.showDropDown;
-				}//end
+            $scope.DropDownToggle = function() {
+                    $scope.showDropDown = !$scope.showDropDown;
+                } //end
 
         }
-    }
-})
+  }
+})//END
