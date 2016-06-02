@@ -1,3 +1,5 @@
-angular.module('mySuperClean').controller('homeCtrl', function($scope) {
+(function (arguments) {
+  angular.module('mySuperClean').controller('homeCtrl', function($scope) {
 
-});
+  });
+})();

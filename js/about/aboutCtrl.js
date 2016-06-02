@@ -1,3 +1,5 @@
-angular.module('mySuperClean').controller('aboutCtrl', function($scope) {
+(function (arguments) {
+  angular.module('mySuperClean').controller('aboutCtrl', function($scope) {
 
-});
+  });
+})();

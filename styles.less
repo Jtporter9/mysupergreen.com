@@ -1,15 +1,15 @@
-@import url(https://fonts.googleapis.com/css?family=PT+Mono); //Variables//
+@import url(https://fonts.googleapis.com/css?family=PT+Mono);
+@import url(https://fonts.googleapis.com/css?family=Sigmar+One);
+//Variables//
 @backcolor-main: whitesmoke;
 @yellow: #FFF236;
 @lightblue: rgb(36, 125, 218);
 @leafgreen: #00A357;
-@headfootcolor: rgb(30, 42, 26);
-// @backcolor-main: #ffffff;
+@headfootcolor: rgb(30, 42, 26); // @backcolor-main: #ffffff;
 // @yellow: #ffeb3b;
 // @lightblue: #03a9f4;
 // @leafgreen: #4caf50;
 // @headfootcolor: #004d40;
-
 body {
     font-family: 'PT Mono', monospace;
     background-color: @backcolor-main;
@@ -19,18 +19,21 @@ body {
 }
 /////HEADER SECTION/////
 .h1-holder {
+    font-family: 'Sigmar One', cursive;
     width: 90%;
-    margin-left: 5%;
+    margin-left: 5%;xx
     border-radius: 5px;
     margin-top: 10px;
     color: black;
     position: absolute;
     text-align: center;
     background-color: @yellow;
-    h1 {
-        margin: 0;
-        clear: none;
-    }
+    box-shadow: 1px 1px 1px 1px black;
+    text-shadow: 1.5px 1.5px 1.5px darkgray;
+    font-weight: 900;
+    word-spacing: 3px;
+    letter-spacing: 3px;
+    font-size: 26px;
 }
 header {
     color: @yellow;
@@ -38,16 +41,16 @@ header {
     background-color: @headfootcolor;
     height: auto;
     padding: 50px 10px 10px;
-    box-shadow: 2px 2px 2px 2px black;
+    box-shadow: 1px 1px 1px 1px black;
     .header-img {
         width: 50%;
         margin-left: 25%;
         margin-bottom: 10px;
-        margin-top: 10px;
+        margin-top: 20px;
         img {
             width: 100%;
             border: 1px solid black;
-            box-shadow: 2px 2px 2px 2px rgb(50, 62, 46);
+            box-shadow: 2px 2px 2px 2px black;
             border-radius: 5px;
         }
     }
@@ -65,8 +68,9 @@ header {
     .header-left {
         float: left;
         width: 20%;
+        text-shadow: 2px 2px 2px black;
         a {
-            color: @yellow;
+            color: #426DA7;
             i {
                 font-size: 40px;
                 margin: 5px 10px;
@@ -75,8 +79,14 @@ header {
                 left: 25%;
             }
         }
+        a:nth-child(2) {
+            color: gray;
+        }
+        a:nth-child(3) {
+            color: #F74735;
+        }
         a:hover {
-            color: @lightblue;
+            color: @yellow;
             i {
                 border-bottom: 2px solid white;
             }
@@ -99,12 +109,16 @@ header {
     }
 }
 .dropbtn:hover {
+    box-shadow: none;
     a {
         color: @lightblue;
     }
 }
 .dropbtn:active {
-    box-shadow: none;
+    //BEVEL EFFECT :)
+    -moz-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
 }
 // /* The container <div> - needed to position the dropdown content */
 .dropdown {
@@ -116,25 +130,31 @@ header {
     // display: none;
     float: left;
     position: absolute;
-    right:17px;
-    top:13px;
+    right: 13px;
+    top: 13px;
     background-color: @headfootcolor;
     box-shadow: 2px 2px 2px 2px black;
-    width: 120px;
+    width: 140px;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
     text-align: left;
     a {
-      padding-left: 5px;
+        padding-left: 5px;
         font-size: 16px;
         color: white;
         padding: 5px;
         text-decoration: none;
         display: block;
+        border-bottom: 1px solid white;
     }
     a:hover {
         color: @lightblue;
-        border-bottom: 1px solid white;
+        // border-bottom: 1px solid @lightblue;
+        background-color: white;
+    }
+    a:nth-last-child(1) {
+        border: none;
+        border-radius: 5px;
     }
 }
 //////END OF HEADER////////
@@ -163,7 +183,11 @@ footer {
     }
 }
 ///// HOME /////
+.uppercase{
+  text-transform: uppercase;
+}
 .container-main {
+  h3,h4{margin:15px;}
     border: 1px solid black;
     width: 80%;
     margin: 10px 10%;
@@ -174,4 +198,27 @@ footer {
     color: white;
     background-color: @headfootcolor;
     // background-color: #a1887f;
+    p{
+      letter-spacing: 2px;
+      padding:10px;
+      width:90%;
+      margin-left: 5%;
+    }
+    li{
+      text-align: left;
+      padding:10px;
+    }
+    a{color:@lightblue;}
+    a:hover{color:@yellow;}
+    .contact-info{
+      width:50%;
+      margin-left: 35%;
+      text-align: left;
+      margin-top:30px;
+      font-size: 24px;
+      padding:10px;
+      div{
+        padding:2px 0;
+      }
+    }
 }

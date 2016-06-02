@@ -1,3 +1,6 @@
-angular.module('mySuperClean').controller('contactCtrl', function($scope) {
+(function (arguments) {
+  angular.module('mySuperClean').controller('contactCtrl', function($scope) {
 
-});
+  });
+
+})();
