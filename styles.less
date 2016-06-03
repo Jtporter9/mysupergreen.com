@@ -15,8 +15,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: @leafgreen;
-    height: 1000px;
-    width: 100%;
 }
 /////HEADER SECTION/////
 .h1-holder {
@@ -39,17 +37,19 @@ body {
     z-index: 999;
 }
 .header {
-    //scrolly effect
-    transition: height 500ms, background 500ms;
-    position: fixed;
-    top: 0;
-    //scrolly effect
     color: @yellow;
     border-bottom: 1px solid black;
     background-color: @headfootcolor;
-    height: auto;
+    height: 270px;
     padding: 50px 10px 10px;
     box-shadow: 1px 1px 1px 1px black;
+    /////scrolly effect////
+    position: fixed;
+    top: 0;
+    -webkit-transition: width 2s, height 0.5s, background-color 2s, -webkit-transform 2s;
+    transition: width 2s, height 0.5s, background-color 2s, transform 2s;
+    // transition: height 500ms, background 500ms;
+    /////scrolly effect////
     .header-img {
         width: 50%;
         margin-left: 25%;
@@ -104,8 +104,10 @@ body {
 .header.tiny {
     padding: 15px;
     height: 40px;
-    background:rgba(30, 42, 26, 0.6) ;
+    background: rgba(30, 42, 26, 0.6);
     width: 100%;
+      // -webkit-transform: rotate(0deg);
+      // transform: rotate(0deg);
     .links {
         width: 98.5%;
     }
@@ -287,6 +289,6 @@ footer {
 .container-main:nth-child(2) {
     margin-top: 345px;
 }
-.container-main:nth-child(2).new-margin,  {
-      margin-top: 170px;
-}
+// .container-main:nth-child(2).new-margin {
+//     margin-top: 170px;
+// }
