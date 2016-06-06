@@ -239,10 +239,23 @@ footer {
 .uppercase {
     text-transform: uppercase;
 }
+.container{
+  background-color:@yellow;
+  width:90%;
+  margin: 10px 5%;
+  margin-top: 345px;
+  padding:10px 0;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px black;
+}
+.container.new-margin {
+    margin-top: 170px;
+}
+
 .container-main {
     img {
-        box-shadow: 1px 1px 1px 1px black;
-        border: 1px solid white;
+        // box-shadow: 1px 1px 1px 1px black;
+        // border: 1px solid white;
     }
     h3,
     h4 {
@@ -285,10 +298,4 @@ footer {
             padding: 2px 0;
         }
     }
-}
-.container-main:nth-child(2) {
-    margin-top: 345px;
-}
-.container-main:nth-child(2).new-margin {
-    margin-top: 170px;
 }
