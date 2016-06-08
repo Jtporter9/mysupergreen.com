@@ -16,6 +16,10 @@ body {
     padding: 0;
     background-color: @leafgreen;
 }
+h1,
+h2 {
+    color: @lightblue;
+}
 /////HEADER SECTION/////
 .h1-holder {
     font-family: 'Sigmar One', cursive;
@@ -257,11 +261,18 @@ footer {
     .pic-box {
         margin: 10px 0;
         background-color: @leafgreen;
-        width: 70%;
-        margin-left: 15%;
+        width: 95%;
+        margin-left: 2.5%;
         padding: 10px 0;
         border-radius: 5px;
-        // box-shadow: 2px 2px 2px 2px black;
+        img {
+            width: 45%;
+        }
+        img:nth-child(2) {
+          height: 200px;
+          position: relative;
+          bottom: 28px;
+        }
     }
     h3,
     h4 {
@@ -272,8 +283,7 @@ footer {
     margin: 10px 5%;
     text-align: center;
     border-radius: 5px;
-    // box-shadow: 2px 2px 2px 2px black;
-    // background-color: #263238;
+    padding: 5px;
     color: white;
     background-color: @headfootcolor;
     // background-color: #a1887f;
